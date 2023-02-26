@@ -3,6 +3,12 @@ class Menu
     @dishes = dishes
   end
 
+  def dish_names
+    all_dish_names = []
+    @dishes.each { |dish| all_dish_names << dish.name }
+    return all_dish_names
+  end
+
   def print_menu
     i = 1
     @dishes.each do |dish| 
