@@ -28,7 +28,7 @@ class Menu
   def initialize
   end
 
-  def show_menu
+  def print_menu
     # returns a list of dishes available to order
   end
 end
@@ -37,11 +37,11 @@ class Order
   def initialize
   end
 
-  def add_dish
+  def add_to_order
     # adds dish to the order
   end
 
-  def receipt_items
+  def ordered_items
     # returns the list of all items on the order with the prices
   end
 

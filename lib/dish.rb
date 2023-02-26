@@ -1,13 +1,8 @@
 class Dish
-  def initialize
-    @dishes = []
-  end
+  attr_reader :name, :price
 
-  def add_dish(name, price)
-    @dishes << [name, price]
-  end
-
-  def return_all_dishes
-    return @dishes
+  def initialize(name, price)
+    @name = name
+    @price = price
   end
 end
